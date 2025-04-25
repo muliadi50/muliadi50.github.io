@@ -1,0 +1,5 @@
+url : "https://muliaditumangger.github.io"
+plugins:
+ - jekyll-feed
+ - jekyll-sitemap
+ - jekyll-seo-tag
