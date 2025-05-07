@@ -1,68 +1,14 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-05-07T22:47:26+07:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">SASS dan CSS</title><link href="http://localhost:4000/2025/04/21/sass-dan-css.html" rel="alternate" type="text/html" title="SASS dan CSS" /><published>2025-04-21T00:00:00+07:00</published><updated>2025-04-21T00:00:00+07:00</updated><id>http://localhost:4000/2025/04/21/sass-dan-css</id><content type="html" xml:base="http://localhost:4000/2025/04/21/sass-dan-css.html"><![CDATA[<p>Penjelasan sass dan css</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-05-07T23:45:56+07:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">sass dan css</title><link href="http://localhost:4000/2025/05/07/sass-dan-css.html" rel="alternate" type="text/html" title="sass dan css" /><published>2025-05-07T00:00:00+07:00</published><updated>2025-05-07T00:00:00+07:00</updated><id>http://localhost:4000/2025/05/07/sass-dan-css</id><content type="html" xml:base="http://localhost:4000/2025/05/07/sass-dan-css.html"><![CDATA[<p>penjelasan sass dan css</p>
 
-<p>Apa Itu CSS?</p>
+<p>CSS (Cascading Style Sheets):
+CSS adalah bahasa yang digunakan untuk mengatur tampilan dan layout halaman web. CSS mengontrol berbagai aspek visual dari elemen-elemen HTML, seperti warna, font, ukuran teks, jarak antar elemen, dan tata letak. CSS sangat penting dalam pembuatan halaman web agar tampak menarik dan mudah dibaca. CSS ditulis dalam bentuk aturan (rules) yang terdiri dari selector (elemen yang ingin dipengaruhi) dan deklarasi (gaya yang ingin diterapkan pada elemen tersebut).</p>
 
-<p>CSS (<em>Cascading Style Sheets</em>) adalah bahasa yang digunakan untuk mengatur tampilan dan format 
-elemen dalam dokumen HTML Dengan CSS, pengembang web dapat menentukan warna, ukuran, posisi, tata letak, dan berbagai gaya visual lainnya untuk halaman web.
-CSS berfungsi memisahkan konten (HTML) dari presentasi (tampilan), sehingga kode menjadi lebih bersih, terstruktur, dan mudah dikelola. CSS merupakan standar yang digunakan oleh semua browser modern.</p>
+<p>SASS (Syntactically Awesome Style Sheets):
+SASS adalah preprocessor untuk CSS, yang memberikan fungsionalitas tambahan untuk mempermudah dan mempercepat penulisan CSS. Dengan SASS, pengembang dapat menggunakan fitur seperti variabel (untuk mendefinisikan nilai yang dapat digunakan kembali), nested rules (penulisan aturan di dalam aturan lainnya), mixins (fungsi reusable untuk kode CSS), dan lain-lain. SASS membantu pengembang menulis kode CSS yang lebih terstruktur, modular, dan mudah dikelola. Meskipun SASS memiliki sintaks yang lebih kompleks, ia perlu dikompilasi menjadi CSS standar sebelum dapat digunakan di browser.</p>
 
-<p>Kelebihan CSS:</p>
+<p><img src="/assets/images/-css-scss.jpg.webp" alt="html link dan lists" style="width: 300px;" /></p>]]></content><author><name></name></author><summary type="html"><![CDATA[penjelasan sass dan css]]></summary></entry><entry><title type="html">javascript</title><link href="http://localhost:4000/2025/04/22/javascript.html" rel="alternate" type="text/html" title="javascript" /><published>2025-04-22T00:00:00+07:00</published><updated>2025-04-22T00:00:00+07:00</updated><id>http://localhost:4000/2025/04/22/javascript</id><content type="html" xml:base="http://localhost:4000/2025/04/22/javascript.html"><![CDATA[<p>apa itu java script</p>
 
-<ul>
-  <li>Mudah digunakan dan dipelajari.</li>
-  <li>Didukung secara luas oleh semua browser.</li>
-  <li>Memisahkan desain dari struktur HTML.</li>
-  <li>Dapat digunakan untuk styling responsif.</li>
-</ul>
-
-<h3 id="keterbatasan-css">Keterbatasan CSS:</h3>
-<ul>
-  <li>Tidak memiliki fitur pemrograman seperti variabel, perulangan, atau fungsi.</li>
-  <li>Penulisan bisa menjadi repetitif pada proyek besar.</li>
-  <li>Sulit untuk menjaga konsistensi dalam proyek skala besar tanpa bantuan eksternal.</li>
-</ul>
-
-<h2 id="apa-itu-sass">Apa Itu SASS?</h2>
-<p>SASS (Syntactically Awesome Stylesheets) adalah ekstensi dari CSS yang menambahkan fitur-fitur canggih seperti variabel, nested rules (aturan bertingkat), mixins, dan fungsi—yang tidak tersedia dalam CSS standar. Tujuannya adalah untuk memudahkan dan mempercepat penulisan CSS, terutama dalam proyek web yang besar dan kompleks.</p>
-
-<p>SASS tidak menggantikan CSS, tetapi menambahkan lapisan tambahan untuk memudahkan penulisan dan pengelolaan file CSS, terutama dalam proyek berskala besar.</p>
-
-<h3 id="fitur-unggulan-sass">Fitur Unggulan SASS:</h3>
-<ul>
-  <li><strong>Variabel:</strong> Untuk menyimpan nilai yang digunakan berulang (seperti warna, ukuran, font).</li>
-  <li><strong>Nesting:</strong> Untuk menulis selector secara bertingkat mengikuti struktur HTML.</li>
-  <li><strong>Partials &amp; Import:</strong> Untuk memecah file CSS menjadi modul kecil yang mudah dikelola.</li>
-  <li><strong>Mixin:</strong> Untuk membuat template kode yang bisa digunakan kembali.</li>
-  <li><strong>Fungsi:</strong> Untuk memproses dan menghasilkan nilai dinamis.</li>
-  <li><strong>Perulangan &amp; Logika:</strong> Untuk membuat banyak aturan gaya secara efisien.</li>
-  <li><strong>List &amp; Map:</strong> Untuk menyimpan dan mengelola data dalam struktur kompleks.</li>
-</ul>
-
-<h2 id="kapan-menggunakan-css">Kapan Menggunakan CSS?</h2>
-
-<p>Gunakan <strong>CSS biasa</strong> jika:</p>
-<ul>
-  <li>Anda membuat halaman statis yang sederhana.</li>
-  <li>Proyek kecil dan tidak memerlukan pengelolaan style yang kompleks.</li>
-  <li>Anda ingin menghindari proses kompilasi atau setup build tool.</li>
-</ul>
-
-<h2 id="kapan-menggunakan-sass">Kapan Menggunakan SASS?</h2>
-
-<p>Gunakan <strong>SASS</strong> jika:</p>
-<ul>
-  <li>Anda mengelola proyek berskala besar dengan banyak halaman atau komponen.</li>
-  <li>Anda ingin menggunakan fitur pemrograman untuk mempermudah pengelolaan style.</li>
-  <li>Anda memerlukan struktur kode yang modular dan dapat digunakan kembali.</li>
-</ul>
-
-<h2 id="kesimpulan">Kesimpulan</h2>
-
-<p>CSS adalah dasar dari pengaturan tampilan web dan tetap penting untuk dipahami oleh semua pengembang web. Namun, untuk proyek yang lebih kompleks dan dinamis, SASS hadir sebagai alat bantu yang sangat kuat. 
-Dengan fitur-fitur tambahan seperti variabel, nesting, dan mixin, SASS membuat penulisan CSS lebih terorganisir, hemat waktu, dan mudah dipelihara.</p>
-
-<p>SASS bukan pengganti CSS, melainkan <em>alat bantu</em> yang meningkatkan cara kita menulis CSS. File SASS akan tetap dikompilasi menjadi CSS sebelum digunakan di browser. Karena itu, meng
-<img src="/assets/images/-css-scss.jpg.webp" alt="html link dan lists" style="width: 300px;" /></p>]]></content><author><name></name></author><summary type="html"><![CDATA[Penjelasan sass dan css]]></summary></entry><entry><title type="html">javascript</title><link href="http://localhost:4000/2025/03/25/javascript.html" rel="alternate" type="text/html" title="javascript" /><published>2025-03-25T00:00:00+07:00</published><updated>2025-03-25T00:00:00+07:00</updated><id>http://localhost:4000/2025/03/25/javascript</id><content type="html" xml:base="http://localhost:4000/2025/03/25/javascript.html"><![CDATA[<p>JavaScript adalah bahasa pemrograman tingkat tinggi yang digunakan untuk membuat situs web menjadi interaktif.
+<p>JavaScript adalah bahasa pemrograman tingkat tinggi yang digunakan untuk membuat situs web menjadi interaktif.
 Bahasa ini berjalan di sisi klien (client-side) dalam browser, memungkinkan pengembang untuk membuat fitur-fitur
  seperti validasi form, interaksi pengguna, animasi, dan pengambilan data tanpa harus memuat ulang halaman.</p>
 
@@ -87,7 +33,25 @@ JavaScript merupakan salah satu bahasa pemrograman yang wajib dikuasai dalam dun
 
 <p>Menggunakan alat seperti Phaser (game), React Native (mobile), atau Electron (desktop)</p>
 
-<p><img src="/assets/images/logo%20javascript.jpg" alt="html link dan lists" /></p>]]></content><author><name></name></author><summary type="html"><![CDATA[JavaScript adalah bahasa pemrograman tingkat tinggi yang digunakan untuk membuat situs web menjadi interaktif. Bahasa ini berjalan di sisi klien (client-side) dalam browser, memungkinkan pengembang untuk membuat fitur-fitur seperti validasi form, interaksi pengguna, animasi, dan pengambilan data tanpa harus memuat ulang halaman.]]></summary></entry><entry><title type="html">git md</title><link href="http://localhost:4000/2025/03/21/git.html" rel="alternate" type="text/html" title="git md" /><published>2025-03-21T00:00:00+07:00</published><updated>2025-03-21T00:00:00+07:00</updated><id>http://localhost:4000/2025/03/21/git</id><content type="html" xml:base="http://localhost:4000/2025/03/21/git.html"><![CDATA[]]></content><author><name></name></author><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">HTML link dan listst</title><link href="http://localhost:4000/2025/03/20/html-link-dan-list.html" rel="alternate" type="text/html" title="HTML link dan listst" /><published>2025-03-20T00:00:00+07:00</published><updated>2025-03-20T00:00:00+07:00</updated><id>http://localhost:4000/2025/03/20/html-link-dan-list</id><content type="html" xml:base="http://localhost:4000/2025/03/20/html-link-dan-list.html"><![CDATA[<p>penjelasan tentang link dan lists pada HTML</p>
+<p><img src="/assets/images/logo%20javascript.jpg" alt="html link dan lists" /></p>]]></content><author><name></name></author><summary type="html"><![CDATA[apa itu java script]]></summary></entry><entry><title type="html">git md</title><link href="http://localhost:4000/2025/03/21/git.html" rel="alternate" type="text/html" title="git md" /><published>2025-03-21T00:00:00+07:00</published><updated>2025-03-21T00:00:00+07:00</updated><id>http://localhost:4000/2025/03/21/git</id><content type="html" xml:base="http://localhost:4000/2025/03/21/git.html"><![CDATA[<p>Ppenjelasan tentang git</p>
+
+<p>Git adalah sistem pengendalian versi terdistribusi yang digunakan untuk mengelola perubahan pada kode sumber dalam pengembangan perangkat lunak. Git memungkinkan pengembang untuk melacak setiap perubahan yang dilakukan pada proyek, bekerja secara kolaboratif, dan menjaga riwayat lengkap dari pengembangan perangkat lunak.</p>
+
+<p>Fungsi utama Git meliputi:</p>
+
+<p>Pengendalian Versi: Melacak perubahan kode dan memungkinkan kembali ke versi sebelumnya jika diperlukan.</p>
+
+<p>-Kolaborasi Tim: Memungkinkan banyak pengembang bekerja pada proyek yang sama tanpa saling mengganggu.</p>
+
+<p>-Branching dan Merging: Mendukung pembuatan cabang untuk bekerja pada fitur baru atau perbaikan bug, dan kemudian menggabungkan perubahan tersebut ke dalam cabang utama.</p>
+
+<p>-Distribusi: Setiap pengembang memiliki salinan lengkap dari repositori, yang memungkinkan bekerja secara offline.</p>
+
+<p>-Riwayat Perubahan: Menyimpan informasi lengkap tentang siapa yang membuat perubahan, kapan, dan mengapa perubahan tersebut dilakukan.</p>
+
+<p>Undo dan Revert: Memungkinkan pengembang untuk membatalkan atau mengembalikan perubahan yang tidak diinginkan.</p>
+
+<p><img src="/assets/images/git.jpg" alt="html link dan lists" /></p>]]></content><author><name></name></author><summary type="html"><![CDATA[Ppenjelasan tentang git]]></summary></entry><entry><title type="html">HTML link dan listst</title><link href="http://localhost:4000/2025/03/20/html-link-dan-list.html" rel="alternate" type="text/html" title="HTML link dan listst" /><published>2025-03-20T00:00:00+07:00</published><updated>2025-03-20T00:00:00+07:00</updated><id>http://localhost:4000/2025/03/20/html-link-dan-list</id><content type="html" xml:base="http://localhost:4000/2025/03/20/html-link-dan-list.html"><![CDATA[<p>penjelasan tentang link dan lists pada HTML</p>
 
 <p>HTML link digunakan untuk membuat tautan (hyperlink) yang memungkinkan pengguna berpindah dari satu halaman ke halaman lainnya, baik dalam satu situs maupun ke situs luar. 
 Link juga dapat digunakan untuk membuka file, menjalankan email, atau membuat navigasi di dalam halaman. Elemen utama yang digunakan adalah tag anchor yang berfungsi sebagai penanda tautan.</p>
@@ -102,7 +66,8 @@ Link juga dapat digunakan untuk membuka file, menjalankan email, atau membuat na
 
 <p>-Description list, yaitu daftar yang berisi istilah dan penjelasannya, cocok untuk kamus atau definis</p>
 
-<p><img src="/assets/images/gambar.png" alt="html link dan lists" /></p>]]></content><author><name></name></author><summary type="html"><![CDATA[penjelasan tentang link dan lists pada HTML]]></summary></entry><entry><title type="html">markdown</title><link href="http://localhost:4000/2025/03/14/markdown.html" rel="alternate" type="text/html" title="markdown" /><published>2025-03-14T00:00:00+07:00</published><updated>2025-03-14T00:00:00+07:00</updated><id>http://localhost:4000/2025/03/14/markdown</id><content type="html" xml:base="http://localhost:4000/2025/03/14/markdown.html"><![CDATA[<p>Apa Itu Markdown?</p>
+<p><img src="/assets/images/HTML%20LISTS.jpg" alt="html link dan lists" />
+<img src="/assets/images/HTML.jpg" alt="html link dan lists" /></p>]]></content><author><name></name></author><summary type="html"><![CDATA[penjelasan tentang link dan lists pada HTML]]></summary></entry><entry><title type="html">markdown</title><link href="http://localhost:4000/2025/03/14/markdown.html" rel="alternate" type="text/html" title="markdown" /><published>2025-03-14T00:00:00+07:00</published><updated>2025-03-14T00:00:00+07:00</updated><id>http://localhost:4000/2025/03/14/markdown</id><content type="html" xml:base="http://localhost:4000/2025/03/14/markdown.html"><![CDATA[<p>Apa Itu Markdown?</p>
 
 <p>Markdown adalah bahasa markup ringan yang digunakan untuk menulis teks dengan format yang mudah dibaca dan ditulis.
  Diciptakan oleh John Gruber pada tahun 2004, tujuan utama dari Markdown adalah untuk memungkinkan penulis membuat dokumen yang terstruktur dengan cara yang sederhana dan efisien, tanpa harus menggunakan sintaks HTML yang rumit.</p>

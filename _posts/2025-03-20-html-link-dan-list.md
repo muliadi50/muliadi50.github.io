@@ -17,4 +17,5 @@ HTML list digunakan untuk menampilkan informasi dalam bentuk daftar. Terdapat ti
 
 -Description list, yaitu daftar yang berisi istilah dan penjelasannya, cocok untuk kamus atau definis
 
-![html link dan lists](/assets/images/gambar.png)
+![html link dan lists](/assets/images/HTML%20LISTS.jpg)
+![html link dan lists](/assets/images/HTML.jpg)

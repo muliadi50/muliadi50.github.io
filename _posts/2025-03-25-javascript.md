@@ -1,7 +1,9 @@
 ---
 layout: post
 title: "javascript"
+date: 2025-04-22
 ---
+apa itu java script
 
 JavaScript adalah bahasa pemrograman tingkat tinggi yang digunakan untuk membuat situs web menjadi interaktif.
 Bahasa ini berjalan di sisi klien (client-side) dalam browser, memungkinkan pengembang untuk membuat fitur-fitur
