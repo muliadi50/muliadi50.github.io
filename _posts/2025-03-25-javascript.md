@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "javascript"
-date: 2025-04-22
 ---
 apa itu java script
 

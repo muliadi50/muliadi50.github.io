@@ -1,5 +1,20 @@
-url : "https://muliadi-tumangger.github.io"
-plugins:
- - jekyll-feed
- - jekyll-sitemap
- - jekyll-seo-tag
+title: Muliadi Tumangger
+email: muliaditumangger50@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  A personal blog by muliadi Tumangger, a student at Politeknik Negeri Lhokseumawe.
+  This blog is built using Jekyll and hosted on GitHub Pages.
+
+  The content is primarily in Indonesian, but some posts may be in English.
+  i live in subulussalam i was born on the 12-06-2006 juni 
+baseurl: "" # the subpath of your site, e.g. /blog
+
+url: "https://muliadi50.github.io" # the base hostname & protocol for your site
+
+github_username: muliadi50
+
+collections:
+  students:
+    output: true
+    permalink: /students/:n
+    title: Students
+
