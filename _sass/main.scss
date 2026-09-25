@@ -1,69 +1,970 @@
-$primary-color: #092ed0;
-$secondary-color: #fbcb05;
-$font-stack: Helvetica, sans-serif;
+/* =========================================
+   MODERN PERSONAL BLOG - MULIADI TUMANGGER
+   ========================================= */
 
-body,
-h1,
-h2 {
-  margin: 0; padding: 0; box-sizing: border-box;
+/* ---------- Variables ---------- */
+
+$primary-color: #2563eb;
+$primary-dark: #1d4ed8;
+$secondary-color: #facc15;
+$text-color: #1f2937;
+$text-muted: #6b7280;
+$white: #ffffff;
+$background: #f4f7fb;
+$border-color: #e5e7eb;
+$font-stack: "Poppins", "Segoe UI", Arial, sans-serif;
+
+
+/* ---------- Reset ---------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  font-family: $font-stack; line-height: 1.6;
-  background-color: #f4f4f4;
+  font-family: $font-stack;
+  line-height: 1.7;
+  color: $text-color;
+  background:
+    radial-gradient(circle at 10% 10%, rgba(37, 99, 235, 0.10), transparent 25%),
+    radial-gradient(circle at 90% 80%, rgba(250, 204, 21, 0.10), transparent 25%),
+    $background;
+  min-height: 100vh;
 }
 
-header {
-  text-align: center; padding: 24px; color: #fff;
-  background-color: $primary-color;
+img {
+  max-width: 100%;
+  height: auto;
 }
+
+a {
+  color: inherit;
+}
+
+
+/* =========================================
+   CONTAINER
+   ========================================= */
+
+.container {
+  width: min(92%, 1180px);
+  margin: 30px auto;
+}
+
+
+/* =========================================
+   HEADER
+   Compatible dengan HTML lama
+   ========================================= */
+
+.container > header:not(.header) {
+  position: relative;
+  overflow: hidden;
+
+  text-align: center;
+  padding: 45px 30px;
+
+  color: $white;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(37, 99, 235, 0.98),
+      rgba(29, 78, 216, 0.92)
+    );
+
+  border-radius: 24px;
+
+  box-shadow:
+    0 18px 45px rgba(30, 64, 175, 0.20);
+
+  margin-bottom: 25px;
+}
+
+.container > header:not(.header)::before {
+  content: "";
+  position: absolute;
+
+  width: 220px;
+  height: 220px;
+
+  right: -70px;
+  top: -100px;
+
+  background: rgba(255, 255, 255, 0.10);
+
+  border-radius: 50%;
+}
+
+.container > header:not(.header)::after {
+  content: "";
+  position: absolute;
+
+  width: 150px;
+  height: 150px;
+
+  left: -70px;
+  bottom: -80px;
+
+  background: rgba(250, 204, 21, 0.15);
+
+  border-radius: 50%;
+}
+
+
+/* ---------- Profile Picture ---------- */
+
+.profile-picture {
+  position: relative;
+  z-index: 1;
+
+  display: block;
+
+  width: 145px;
+  height: 145px;
+
+  object-fit: cover;
+
+  margin: 0 auto 20px;
+
+  border-radius: 50%;
+
+  border: 5px solid rgba(255, 255, 255, 0.85);
+
+  background-color: $secondary-color;
+
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.20);
+}
+
+
+/* ---------- Header Title ---------- */
+
+.container > header:not(.header) h1 {
+  position: relative;
+  z-index: 1;
+
+  margin-bottom: 10px;
+
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 800;
+
+  color: $white;
+
+  letter-spacing: -1px;
+}
+
+.container > header:not(.header) p {
+  position: relative;
+  z-index: 1;
+
+  max-width: 720px;
+
+  margin: 0 auto;
+
+  color: rgba(255, 255, 255, 0.92);
+
+  font-size: 1rem;
+}
+
+
+/* =========================================
+   NAVIGATION
+   Compatible dengan HTML lama
+   ========================================= */
+
+.container > nav:not(.navbar) {
+  margin: 20px 0;
+}
+
+.container > nav:not(.navbar) ul {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  flex-wrap: wrap;
+  gap: 8px;
+
+  list-style: none;
+
+  padding: 10px;
+
+  background: rgba(255, 255, 255, 0.82);
+
+  border: 1px solid rgba(255, 255, 255, 0.9);
+
+  border-radius: 18px;
+
+  box-shadow:
+    0 10px 30px rgba(15, 23, 42, 0.08);
+
+  backdrop-filter: blur(12px);
+}
+
+.container > nav:not(.navbar) li {
+  float: none;
+}
+
+.container > nav:not(.navbar) a {
+  display: block;
+
+  padding: 10px 18px;
+
+  color: $text-color;
+
+  text-decoration: none;
+
+  font-size: 0.95rem;
+  font-weight: 600;
+
+  border-radius: 12px;
+
+  transition:
+    background 0.25s ease,
+    color 0.25s ease,
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.container > nav:not(.navbar) a:hover {
+  color: $white;
+
+  background: linear-gradient(
+    135deg,
+    $primary-color,
+    $primary-dark
+  );
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 7px 18px rgba(37, 99, 235, 0.25);
+}
+
+.container > nav:not(.navbar) a.active,
+.container > nav:not(.navbar) .active {
+  color: $white;
+
+  background: linear-gradient(
+    135deg,
+    $primary-color,
+    $primary-dark
+  );
+}
+
+
+/* =========================================
+   MAIN
+   ========================================= */
 
 main {
-  padding: 24px; margin-top: 24px;
-  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
-  background-color: #fff;
+  width: 100%;
+
+  padding: 35px;
+
+  margin-top: 25px;
+
+  background: rgba(255, 255, 255, 0.90);
+
+  border: 1px solid rgba(255, 255, 255, 0.9);
+
+  border-radius: 22px;
+
+  box-shadow:
+    0 12px 35px rgba(15, 23, 42, 0.08);
+
+  backdrop-filter: blur(10px);
 }
 
-footer {
-  text-align: center; padding: 8px; margin-top: 24px; color: #fff;
-  background-color: $primary-color;
+
+/* =========================================
+   GENERAL HEADINGS
+   ========================================= */
+
+main h1,
+main h2,
+main h3 {
+  color: $text-color;
 }
 
-h2 {
-  color: #333; margin-bottom: 8px;
+main h1 {
+  margin-bottom: 15px;
+
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+
+  font-weight: 800;
 }
 
-nav {
-  margin: 24px 0;
+main h2 {
+  margin-top: 30px;
+  margin-bottom: 12px;
 
-  ul {
-    list-style-type: none; margin: 0; padding: 0; overflow: hidden;
-    background-color: $primary-color;
+  font-size: 1.5rem;
 
-    li {
-      float: left;
+  color: $primary-dark;
+}
 
-      a {
-        display: block; color: white; text-align: center; padding: 8px 16px;
-        text-decoration: none;
+main h3 {
+  margin-top: 22px;
+  margin-bottom: 10px;
 
-        &:hover:not(.active) {
-          background-color: $secondary-color;
-        }
-      }
-    }
+  font-size: 1.2rem;
+}
+
+
+/* =========================================
+   ARTICLE / POST
+   Struktur artikel lama:
+   h1
+   p tanggal
+   p deskripsi
+   ...
+   ========================================= */
+
+main:has(> h1 + p + p) {
+  max-width: 900px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main:has(> h1 + p + p) > h1 {
+  margin-bottom: 8px;
+
+  font-size: clamp(2rem, 5vw, 3rem);
+
+  line-height: 1.2;
+
+  background: linear-gradient(
+    135deg,
+    $primary-color,
+    $primary-dark
+  );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+}
+
+main:has(> h1 + p + p) > p:first-of-type {
+  margin-bottom: 20px;
+
+  color: $text-muted;
+
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+main:has(> h1 + p + p) > p:nth-of-type(2) {
+  padding: 18px 20px;
+
+  margin-bottom: 25px;
+
+  color: #374151;
+
+  background: #eff6ff;
+
+  border-left: 4px solid $primary-color;
+
+  border-radius: 0 12px 12px 0;
+
+  font-weight: 500;
+}
+
+
+/* ---------- Article Paragraph ---------- */
+
+main:has(> h1 + p + p) p {
+  margin-bottom: 17px;
+
+  color: #374151;
+
+  font-size: 1rem;
+}
+
+
+/* ---------- Article Lists ---------- */
+
+main:has(> h1 + p + p) ul,
+main:has(> h1 + p + p) ol {
+  margin: 15px 0 22px 25px;
+}
+
+main:has(> h1 + p + p) li {
+  margin-bottom: 8px;
+
+  color: #374151;
+}
+
+
+/* ---------- Article Links ---------- */
+
+main:has(> h1 + p + p) a {
+  color: $primary-color;
+
+  font-weight: 600;
+
+  text-decoration: none;
+}
+
+main:has(> h1 + p + p) a:hover {
+  color: $primary-dark;
+
+  text-decoration: underline;
+}
+
+
+/* =========================================
+   ARTICLE IMAGE
+   ========================================= */
+
+main:has(> h1 + p + p) img {
+  display: block;
+
+  width: auto;
+  max-width: 100%;
+  max-height: 550px;
+
+  margin: 25px auto;
+
+  object-fit: contain;
+
+  border-radius: 16px;
+
+  box-shadow:
+    0 10px 30px rgba(15, 23, 42, 0.14);
+}
+
+
+/* =========================================
+   CODE BLOCK
+   ========================================= */
+
+main pre {
+  overflow-x: auto;
+
+  margin: 20px 0;
+  padding: 20px;
+
+  background: #111827;
+
+  border-radius: 14px;
+
+  box-shadow:
+    0 8px 20px rgba(15, 23, 42, 0.12);
+}
+
+main pre code {
+  display: block;
+
+  color: #e5e7eb;
+
+  font-family:
+    "Cascadia Code",
+    "Fira Code",
+    Consolas,
+    monospace;
+
+  font-size: 0.9rem;
+
+  line-height: 1.7;
+
+  white-space: pre;
+}
+
+
+/* =========================================
+   BLOG PAGE
+   ========================================= */
+
+.blog-header {
+  text-align: center;
+
+  margin-bottom: 30px;
+}
+
+.blog-header h1 {
+  margin-bottom: 10px;
+
+  font-size: clamp(2rem, 5vw, 3rem);
+
+  color: $text-color;
+}
+
+.blog-header p {
+  color: $text-muted;
+}
+
+
+/* ---------- Blog Grid ---------- */
+
+.post-list {
+  display: grid;
+
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: 25px;
+
+  margin-top: 25px;
+}
+
+
+/* ---------- Blog Card ---------- */
+
+.post-card {
+  overflow: hidden;
+
+  background: $white;
+
+  border: 1px solid $border-color;
+
+  border-radius: 20px;
+
+  box-shadow:
+    0 8px 25px rgba(15, 23, 42, 0.07);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.post-card:hover {
+  transform: translateY(-6px);
+
+  box-shadow:
+    0 18px 40px rgba(15, 23, 42, 0.12);
+}
+
+
+/* ---------- Blog Image ---------- */
+
+.post-image {
+  display: block;
+
+  width: 100%;
+  height: 220px;
+
+  object-fit: cover;
+}
+
+
+/* ---------- Blog Content ---------- */
+
+.post-content {
+  padding: 24px;
+}
+
+.post-category {
+  display: inline-block;
+
+  margin-bottom: 10px;
+
+  padding: 5px 11px;
+
+  color: $primary-dark;
+
+  background: #eff6ff;
+
+  border-radius: 20px;
+
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.post-title {
+  margin-bottom: 8px;
+
+  color: $text-color;
+
+  font-size: 1.35rem;
+  font-weight: 800;
+
+  line-height: 1.35;
+}
+
+.post-date {
+  margin-bottom: 12px;
+
+  color: $text-muted;
+
+  font-size: 0.85rem;
+}
+
+.post-excerpt {
+  margin-bottom: 18px;
+
+  color: #4b5563;
+
+  font-size: 0.95rem;
+}
+
+
+/* ---------- Read More ---------- */
+
+.read-more {
+  display: inline-block;
+
+  padding: 9px 17px;
+
+  color: $white;
+
+  background: linear-gradient(
+    135deg,
+    $primary-color,
+    $primary-dark
+  );
+
+  border-radius: 10px;
+
+  text-decoration: none;
+
+  font-size: 0.9rem;
+  font-weight: 700;
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.read-more:hover {
+  color: $white;
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 7px 18px rgba(37, 99, 235, 0.25);
+}
+
+
+/* =========================================
+   FRIENDS PAGE
+   ========================================= */
+
+.friends-header {
+  text-align: center;
+
+  margin-bottom: 30px;
+}
+
+.friends-header h1 {
+  margin-bottom: 10px;
+
+  color: $text-color;
+
+  font-size: clamp(2rem, 5vw, 3rem);
+}
+
+.friends-header p {
+  color: $text-muted;
+}
+
+
+/* ---------- Friends Grid ---------- */
+
+.friends-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: 18px;
+}
+
+
+/* ---------- Friend Card ---------- */
+
+.friend-card {
+  position: relative;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+
+  padding: 18px;
+
+  background: $white;
+
+  border: 1px solid $border-color;
+
+  border-radius: 17px;
+
+  box-shadow:
+    0 7px 20px rgba(15, 23, 42, 0.06);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.friend-card:hover {
+  transform: translateY(-4px);
+
+  box-shadow:
+    0 14px 30px rgba(15, 23, 42, 0.10);
+}
+
+
+/* ---------- Friend Number ---------- */
+
+.friend-number {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  width: 35px;
+  height: 35px;
+
+  color: $white;
+
+  background: linear-gradient(
+    135deg,
+    $primary-color,
+    $primary-dark
+  );
+
+  border-radius: 50%;
+
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+
+/* ---------- Friend Avatar ---------- */
+
+.friend-avatar {
+  width: 55px;
+  height: 55px;
+
+  flex-shrink: 0;
+
+  object-fit: cover;
+
+  border-radius: 50%;
+
+  border: 3px solid #dbeafe;
+
+  background: #eff6ff;
+}
+
+
+/* ---------- Friend Information ---------- */
+
+.friend-info {
+  flex: 1;
+}
+
+.friend-info h3 {
+  margin: 0 0 4px;
+
+  color: $text-color;
+
+  font-size: 1rem;
+}
+
+.friend-info p {
+  margin: 0;
+
+  color: $text-muted;
+
+  font-size: 0.85rem;
+}
+
+
+/* ---------- Friend Arrow ---------- */
+
+.friend-arrow {
+  color: $primary-color;
+
+  font-size: 1.3rem;
+
+  transition: transform 0.25s ease;
+}
+
+.friend-card:hover .friend-arrow {
+  transform: translateX(4px);
+}
+
+
+/* =========================================
+   FOOTER
+   ========================================= */
+
+.container > footer {
+  margin-top: 30px;
+
+  padding: 22px;
+
+  text-align: center;
+
+  color: rgba(255, 255, 255, 0.9);
+
+  background: linear-gradient(
+    135deg,
+    $primary-color,
+    $primary-dark
+  );
+
+  border-radius: 18px;
+
+  box-shadow:
+    0 10px 25px rgba(15, 23, 42, 0.10);
+}
+
+.container > footer p {
+  margin: 0;
+
+  font-size: 0.9rem;
+}
+
+
+/* =========================================
+   RESPONSIVE - TABLET
+   ========================================= */
+
+@media (max-width: 800px) {
+
+  .container {
+    width: 94%;
+
+    margin: 20px auto;
+  }
+
+  main {
+    padding: 25px;
+  }
+
+  .post-list {
+    grid-template-columns: 1fr;
+  }
+
+  .friends-grid {
+    grid-template-columns: 1fr;
   }
 }
 
-.container {
-  width: 80%; margin: auto; overflow: hidden;
+
+/* =========================================
+   RESPONSIVE - MOBILE
+   ========================================= */
+
+@media (max-width: 600px) {
+
+  .container {
+    width: 94%;
+
+    margin: 12px auto;
+  }
+
+  .container > header:not(.header) {
+    padding: 35px 20px;
+
+    border-radius: 20px;
+  }
+
+  .profile-picture {
+    width: 120px;
+    height: 120px;
+  }
+
+  .container > header:not(.header) h1 {
+    font-size: 2rem;
+  }
+
+  .container > header:not(.header) p {
+    font-size: 0.9rem;
+  }
+
+  .container > nav:not(.navbar) ul {
+    gap: 5px;
+
+    padding: 8px;
+  }
+
+  .container > nav:not(.navbar) a {
+    padding: 8px 12px;
+
+    font-size: 0.85rem;
+  }
+
+  main {
+    padding: 20px;
+
+    border-radius: 18px;
+  }
+
+  main:has(> h1 + p + p) > h1 {
+    font-size: 2rem;
+  }
+
+  .post-image {
+    height: 190px;
+  }
+
+  .post-content {
+    padding: 20px;
+  }
+
+  .friend-card {
+    padding: 15px;
+  }
 }
 
-.profile-picture {
-  width: 150px; height: 150px; border-radius: 50%; margin: 24px auto;
-  background-color: $secondary-color;
-}
 
-.active {
-  background-color: $secondary-color;
+/* =========================================
+   SMALL MOBILE
+   ========================================= */
+
+@media (max-width: 450px) {
+
+  .container > nav:not(.navbar) ul {
+    justify-content: stretch;
+  }
+
+  .container > nav:not(.navbar) li {
+    flex: 1;
+  }
+
+  .container > nav:not(.navbar) a {
+    text-align: center;
+
+    padding: 8px 7px;
+
+    font-size: 0.78rem;
+  }
+
+  .profile-picture {
+    width: 105px;
+    height: 105px;
+  }
+
+  main {
+    padding: 17px;
+  }
+
+  main:has(> h1 + p + p) > h1 {
+    font-size: 1.7rem;
+  }
+
+  main pre {
+    padding: 14px;
+
+    font-size: 0.8rem;
+  }
+
+  .friend-avatar {
+    width: 48px;
+    height: 48px;
+  }
 }
