@@ -1,170 +1,215 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
   <meta charset="UTF-8">
-  <title>Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Stylesheet -->
-  <link rel="stylesheet" href="/assets/css/styles.css">
+  <title>Home | Muliadi Tumangger</title>
 
   <!-- Favicon -->
   <link rel="icon" href="/assets/images/favicon.ico">
 
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="/assets/css/styles.css">
+
   <!-- JavaScript -->
-  <script src="/assets/js/scripts.js"></script>
+  <script src="/assets/js/scripts.js" defer></script>
 
-  <!-- Plugins -->
-  <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Muliadi Tumangger" />
-  <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Home | Muliadi Tumangger</title>
-<meta name="generator" content="Jekyll v4.4.1" />
-<meta property="og:title" content="Home" />
-<meta property="og:locale" content="en_US" />
-<meta name="description" content="A personal blog by muliadi Tumangger, a student at Politeknik Negeri Lhokseumawe. This blog is built using Jekyll and hosted on GitHub Pages. The content is primarily in Indonesian, but some posts may be in English. i live in subulussalam i was born on the 12-06-2006 juni" />
-<meta property="og:description" content="A personal blog by muliadi Tumangger, a student at Politeknik Negeri Lhokseumawe. This blog is built using Jekyll and hosted on GitHub Pages. The content is primarily in Indonesian, but some posts may be in English. i live in subulussalam i was born on the 12-06-2006 juni" />
-<link rel="canonical" href="http://localhost:4000/" />
-<meta property="og:url" content="http://localhost:4000/" />
-<meta property="og:site_name" content="Muliadi Tumangger" />
-<meta property="og:type" content="website" />
-<meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Home" />
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","description":"A personal blog by muliadi Tumangger, a student at Politeknik Negeri Lhokseumawe. This blog is built using Jekyll and hosted on GitHub Pages. The content is primarily in Indonesian, but some posts may be in English. i live in subulussalam i was born on the 12-06-2006 juni","headline":"Home","name":"Muliadi Tumangger","url":"http://localhost:4000/"}</script>
-<!-- End Jekyll SEO tag -->
+  <!-- Feed -->
+  <link type="application/atom+xml"
+        rel="alternate"
+        href="/feed.xml"
+        title="Muliadi Tumangger">
 
+  <!-- SEO -->
+  <meta name="description"
+        content="Personal blog Muliadi Tumangger, mahasiswa Politeknik Negeri Lhokseumawe.">
 </head>
+
 <body>
+
+  <!-- Background Decoration -->
+  <div class="background-circle circle-1"></div>
+  <div class="background-circle circle-2"></div>
+
   <div class="container">
-    <header>
-      <img src="/assets/images/foto web.jpg" alt="Profile Picture" class="profile-picture">
+
+    <!-- HEADER -->
+    <header class="header">
+
+      <div class="profile-wrapper">
+        <img
+          src="/assets/images/foto web.jpg"
+          alt="Foto Profil Muliadi Tumangger"
+          class="profile-picture">
+      </div>
+
+      <span class="welcome">WELCOME TO MY WEBSITE</span>
+
       <h1>Muliadi Tumangger</h1>
-      <p>A personal blog by muliadi Tumangger, a student at Politeknik Negeri Lhokseumawe. This blog is built using Jekyll and hosted on GitHub Pages.
-The content is primarily in Indonesian, but some posts may be in English. i live in subulussalam i was born on the 12-06-2006 juni 
-</p>
+
+      <p class="subtitle">
+        Personal Blog &amp; Portfolio
+      </p>
+
+      <p class="description">
+        Halo! Saya <strong>Muliadi Tumangger</strong>, mahasiswa
+        Politeknik Negeri Lhokseumawe. Saya berasal dari
+        <strong>Subulussalam</strong> dan memiliki hobi memancing.
+        Website ini saya gunakan sebagai tempat berbagi cerita,
+        pengalaman, dan berbagai aktivitas selama kuliah.
+      </p>
+
     </header>
 
-    <nav>
-      <ul>
-    
-      <li>
-        <a href="/"  class="active">
-          Home
-        </a>
-      </li>
-    
-      <li>
-        <a href="/friends.html" >
-          Friends
-        </a>
-      </li>
-    
-      <li>
-        <a href="/blog.html" >
-          Blog
-        </a>
-      </li>
-    
-  </ul>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+
+      <a href="/" class="nav-link active">
+        <span>⌂</span>
+        Home
+      </a>
+
+      <a href="/friends.html" class="nav-link">
+        <span>👥</span>
+        Friends
+      </a>
+
+      <a href="/blog.html" class="nav-link">
+        <span>📝</span>
+        Blog
+      </a>
+
     </nav>
 
+
+    <!-- MAIN CONTENT -->
     <main>
-      <!DOCTYPE html>
-<html lang="id">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Home</title>
-  <style>
-    body {
-      font-family: 'Arial', sans-serif;
-      background-color: #f4f4f9;
-      color: #333;
-      margin: 0;
-      padding: 0;
-    }
 
-    nav {
-      background-color: #ffffff;
-      padding: 15px 0;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-      text-align: center;
-    }
+      <!-- ABOUT CARD -->
+      <section class="about-card">
 
-    nav a {
-      margin: 0 20px;
-      text-decoration: none;
-      color: #3498db;
-      font-weight: bold;
-      font-size: 18px;
-      transition: color 0.3s ease;
-    }
+        <div class="card-icon">
+          👋
+        </div>
 
-    nav a:hover {
-      color: #2c3e50;
-    }
+        <h2>Tentang Saya</h2>
 
-    .container {
-      max-width: 800px;
-      margin: 60px auto;
-      padding: 30px;
-      background: #fff;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-      border-radius: 12px;
-      text-align: center;
-    }
+        <p>
+          Saya adalah mahasiswa yang sedang menempuh pendidikan
+          di <strong>Politeknik Negeri Lhokseumawe</strong>.
+          Saya berasal dari Subulussalam dan senang mempelajari
+          berbagai hal yang berkaitan dengan teknologi dan
+          pengembangan website.
+        </p>
 
-    h1 {
-      color: #2c3e50;
-    }
+        <div class="info-grid">
 
-    p {
-      font-size: 18px;
-      line-height: 1.6;
-    }
+          <div class="info-box">
+            <span class="info-icon">👤</span>
+            <div>
+              <small>Nama</small>
+              <strong>Muliadi Tumangger</strong>
+            </div>
+          </div>
 
-    .btn-wrapper {
-      margin-top: 25px;
-    }
+          <div class="info-box">
+            <span class="info-icon">📍</span>
+            <div>
+              <small>Asal</small>
+              <strong>Subulussalam</strong>
+            </div>
+          </div>
 
-    button {
-      padding: 10px 20px;
-      background-color: #3498db;
-      color: white;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      font-size: 16px;
-      transition: background 0.3s ease;
-    }
+          <div class="info-box">
+            <span class="info-icon">🎓</span>
+            <div>
+              <small>Kampus</small>
+              <strong>Politeknik Negeri Lhokseumawe</strong>
+            </div>
+          </div>
 
-    button:hover {
-      background-color: #2980b9;
-    }
-  </style>
-</head>
-<body>
-<div class="container">
-  <h1>Nama: muliadi50 tumangger</h1>
-  <p>Deskripsi Diri: Saya Muliadi Tumangger, saya berasal dari Subulussalam. Hobi saya memancing, dan saya berkuliah di Politeknik Negeri Lhokseumawe.</p>
-  <div class="btn-wrapper">
-    <button onclick="myFunction()">Jangan diKlik ya!!!</button>
-  </div>
-</div>
+          <div class="info-box">
+            <span class="info-icon">🎣</span>
+            <div>
+              <small>Hobi</small>
+              <strong>Memancing</strong>
+            </div>
+          </div>
 
-<script>
-  function myFunction() {
-    alert("Kan udah dibilang jangan diklik 😅");
-  }
-</script>
+        </div>
 
-</body>
-</html>
+      </section>
+
+
+      <!-- FUN BUTTON -->
+      <section class="fun-card">
+
+        <div>
+          <span class="fun-label">FUN AREA</span>
+
+          <h2>Jangan Klik Tombol Ini! 😁</h2>
+
+          <p>
+            Katanya jangan diklik... tapi kalau penasaran,
+            silakan coba.
+          </p>
+        </div>
+
+        <button onclick="myFunction()" class="fun-button">
+          Jangan diKlik ya! 😆
+        </button>
+
+      </section>
+
+
+      <!-- SHORT INTRO -->
+      <section class="quote-card">
+
+        <div class="quote-mark">“</div>
+
+        <p>
+          Belajar sedikit demi sedikit, terus mencoba,
+          dan jangan takut melakukan kesalahan.
+        </p>
+
+        <span>— Muliadi Tumangger</span>
+
+      </section>
 
     </main>
 
+
+    <!-- FOOTER -->
     <footer>
-     <p>&copy; 2025 Muliadi Tumangger. All rights reserved.</p> 
+
+      <div class="footer-line"></div>
+
+      <p>
+        &copy; 2026 <strong>Muliadi Tumangger</strong>
+      </p>
+
+      <small>
+        Personal Website • Built with HTML, CSS &amp; JavaScript
+      </small>
+
     </footer>
+
   </div>
+
+
+  <!-- JAVASCRIPT -->
+  <script>
+    function myFunction() {
+      alert("Kan udah dibilang jangan diklik 😅😂");
+    }
+  </script>
+
 </body>
 </html>

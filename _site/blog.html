@@ -1,177 +1,429 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
+
 <head>
+
   <meta charset="UTF-8">
-  <title>Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Stylesheet -->
-  <link rel="stylesheet" href="/assets/css/styles.css">
+  <title>Blog | Muliadi Tumangger</title>
 
-  <!-- Favicon -->
   <link rel="icon" href="/assets/images/favicon.ico">
 
-  <!-- JavaScript -->
-  <script src="/assets/js/scripts.js"></script>
+  <link
+    rel="stylesheet"
+    href="/assets/css/styles.css">
 
-  <!-- Plugins -->
-  <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Muliadi Tumangger" />
-  <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Blog | Muliadi Tumangger</title>
-<meta name="generator" content="Jekyll v4.4.1" />
-<meta property="og:title" content="Blog" />
-<meta property="og:locale" content="en_US" />
-<meta name="description" content="A personal blog by muliadi Tumangger, a student at Politeknik Negeri Lhokseumawe. This blog is built using Jekyll and hosted on GitHub Pages. The content is primarily in Indonesian, but some posts may be in English. i live in subulussalam i was born on the 12-06-2006 juni" />
-<meta property="og:description" content="A personal blog by muliadi Tumangger, a student at Politeknik Negeri Lhokseumawe. This blog is built using Jekyll and hosted on GitHub Pages. The content is primarily in Indonesian, but some posts may be in English. i live in subulussalam i was born on the 12-06-2006 juni" />
-<link rel="canonical" href="http://localhost:4000/blog.html" />
-<meta property="og:url" content="http://localhost:4000/blog.html" />
-<meta property="og:site_name" content="Muliadi Tumangger" />
-<meta property="og:type" content="website" />
-<meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Blog" />
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","description":"A personal blog by muliadi Tumangger, a student at Politeknik Negeri Lhokseumawe. This blog is built using Jekyll and hosted on GitHub Pages. The content is primarily in Indonesian, but some posts may be in English. i live in subulussalam i was born on the 12-06-2006 juni","headline":"Blog","url":"http://localhost:4000/blog.html"}</script>
-<!-- End Jekyll SEO tag -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
 
 </head>
+
 <body>
+
+  <div class="background-circle circle-1"></div>
+  <div class="background-circle circle-2"></div>
+
   <div class="container">
-    <header>
-      <img src="/assets/images/foto web.jpg" alt="Profile Picture" class="profile-picture">
-      <h1>Muliadi Tumangger</h1>
-      <p>A personal blog by muliadi Tumangger, a student at Politeknik Negeri Lhokseumawe. This blog is built using Jekyll and hosted on GitHub Pages.
-The content is primarily in Indonesian, but some posts may be in English. i live in subulussalam i was born on the 12-06-2006 juni 
-</p>
+
+    <!-- HEADER -->
+
+    <header class="header">
+
+      <div class="profile-wrapper">
+
+        <img
+          src="/assets/images/foto web.jpg"
+          alt="Muliadi Tumangger"
+          class="profile-picture">
+
+      </div>
+
+      <span class="welcome">
+        MY BLOG
+      </span>
+
+      <h1>
+        Muliadi Tumangger
+      </h1>
+
+      <p class="subtitle">
+        Catatan &amp; Pembelajaran
+      </p>
+
+      <p class="description">
+        Kumpulan artikel, catatan pembelajaran,
+        dan berbagai materi yang saya pelajari
+        selama menjadi mahasiswa.
+      </p>
+
     </header>
 
-    <nav>
-      <ul>
-    
-      <li>
-        <a href="/" >
-          Home
-        </a>
-      </li>
-    
-      <li>
-        <a href="/friends.html" >
-          Friends
-        </a>
-      </li>
-    
-      <li>
-        <a href="/blog.html"  class="active">
-          Blog
-        </a>
-      </li>
-    
-  </ul>
+
+    <!-- NAVIGATION -->
+
+    <nav class="navbar">
+
+      <a href="/" class="nav-link">
+        <span>⌂</span>
+        Home
+      </a>
+
+      <a href="/friends.html" class="nav-link">
+        <span>👥</span>
+        Friends
+      </a>
+
+      <a href="/blog.html" class="nav-link active">
+        <span>📝</span>
+        Blog
+      </a>
+
     </nav>
 
-    <main>
-      <style>
-  body {
-    background-color: #f5f6fa;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
 
-  .content-container {
-    max-width: 600px;
-    margin: 50px auto;
-    background: white;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  }
+    <!-- BLOG HEADER -->
 
-  h1 {
-    font-size: 24px;
-    color: #333;
-    margin-bottom: 20px;
-    text-align: center;
-  }
+    <section class="blog-header">
 
-  ul {
-    list-style-type: disc;
-    padding-left: 20px;
-  }
+      <h1>
+        📚 Blog &amp; Catatan
+      </h1>
 
-  li {
-    margin-bottom: 10px;
-  }
+      <p>
+        Berikut adalah beberapa artikel dan catatan
+        pembelajaran mengenai teknologi web,
+        pemrograman, dan pengembangan software.
+      </p>
 
-  a {
-    color: #3498db;
-    text-decoration: none;
-  }
+    </section>
 
-  a:hover {
-    text-decoration: underline;
-  }
 
-  p {
-    font-size: 14px;
-    color: #555;
-    margin: 5px 0;
-  }
-</style>
+    <!-- POST LIST -->
 
-<div class="content-container">
-  <h1>Blog</h1>
+    <main class="post-list">
 
-  <ul>
-    
-    <li>
-      <a href="/2025/05/07/sass-dan-css.html">sass dan css</a>
-      <p>07 May 2025</p>
-      <p><p>penjelasan sass dan css</p>
-</p>
-    </li>
-    
-    <li>
-      <a href="/2025/03/25/javascript.html">javascript</a>
-      <p>25 March 2025</p>
-      <p><p>apa itu java script</p>
-</p>
-    </li>
-    
-    <li>
-      <a href="/2025/03/21/git.html">git md</a>
-      <p>21 March 2025</p>
-      <p><p>Ppenjelasan tentang git</p>
-</p>
-    </li>
-    
-    <li>
-      <a href="/2025/03/20/html-link-dan-list.html">HTML link dan listst</a>
-      <p>20 March 2025</p>
-      <p><p>penjelasan tentang link dan lists pada HTML</p>
-</p>
-    </li>
-    
-    <li>
-      <a href="/2025/03/14/ruby-dan-jekyll.html">ruby dan jekyll</a>
-      <p>14 March 2025</p>
-      <p><p>penejlasan ruby dan jekyll</p>
-</p>
-    </li>
-    
-    <li>
-      <a href="/2025/03/14/markdown.html">markdown</a>
-      <p>14 March 2025</p>
-      <p><p>Apa Itu Markdown?</p>
-</p>
-    </li>
-    
-  </ul>
-</div>
+
+      <!-- SASS & CSS -->
+
+      <article class="post-card">
+
+        <div class="post-image-wrapper">
+
+          <img
+            src="/assets/images/-css-scss.jpg.webp"
+            alt="SASS dan CSS"
+            class="post-image">
+
+        </div>
+
+        <div class="post-content">
+
+          <span class="post-category">
+            CSS
+          </span>
+
+          <h2 class="post-title">
+            <a href="/2025/05/07/sass-dan-css.html">
+              SASS dan CSS
+            </a>
+          </h2>
+
+          <span class="post-date">
+            📅 7 Mei 2025
+          </span>
+
+          <p class="post-excerpt">
+            Penjelasan mengenai CSS dan SASS,
+            fungsi, serta perbedaannya dalam
+            pengembangan halaman web.
+          </p>
+
+          <a
+            href="/2025/05/07/sass-dan-css.html"
+            class="read-more">
+
+            Baca Selengkapnya →
+            
+          </a>
+
+        </div>
+
+      </article>
+
+
+      <!-- JAVASCRIPT -->
+
+      <article class="post-card">
+
+        <div class="post-image-wrapper">
+
+          <img
+            src="/assets/images/logo%20javascript.jpg"
+            alt="JavaScript"
+            class="post-image">
+
+        </div>
+
+        <div class="post-content">
+
+          <span class="post-category">
+            JavaScript
+          </span>
+
+          <h2 class="post-title">
+
+            <a href="/2025/03/25/javascript.html">
+              JavaScript
+            </a>
+
+          </h2>
+
+          <span class="post-date">
+            📅 25 Maret 2025
+          </span>
+
+          <p class="post-excerpt">
+            Mengenal JavaScript sebagai bahasa
+            pemrograman yang digunakan untuk
+            membuat website menjadi interaktif.
+          </p>
+
+          <a
+            href="/2025/03/25/javascript.html"
+            class="read-more">
+
+            Baca Selengkapnya →
+
+          </a>
+
+        </div>
+
+      </article>
+
+
+      <!-- GIT -->
+
+      <article class="post-card">
+
+        <div class="post-image-wrapper">
+
+          <img
+            src="/assets/images/git.jpg"
+            alt="Git"
+            class="post-image">
+
+        </div>
+
+        <div class="post-content">
+
+          <span class="post-category">
+            Git
+          </span>
+
+          <h2 class="post-title">
+
+            <a href="/2025/03/21/git.html">
+              Git
+            </a>
+
+          </h2>
+
+          <span class="post-date">
+            📅 21 Maret 2025
+          </span>
+
+          <p class="post-excerpt">
+            Penjelasan mengenai Git sebagai
+            sistem pengendalian versi untuk
+            mengelola perubahan kode.
+          </p>
+
+          <a
+            href="/2025/03/21/git.html"
+            class="read-more">
+
+            Baca Selengkapnya →
+
+          </a>
+
+        </div>
+
+      </article>
+
+
+      <!-- HTML LINK & LIST -->
+
+      <article class="post-card">
+
+        <div class="post-image-wrapper">
+
+          <img
+            src="/assets/images/HTML%20LISTS.jpg"
+            alt="HTML Link dan Lists"
+            class="post-image">
+
+        </div>
+
+        <div class="post-content">
+
+          <span class="post-category">
+            HTML
+          </span>
+
+          <h2 class="post-title">
+
+            <a href="/2025/03/20/html-link-dan-list.html">
+              HTML Link dan Lists
+            </a>
+
+          </h2>
+
+          <span class="post-date">
+            📅 20 Maret 2025
+          </span>
+
+          <p class="post-excerpt">
+            Mengenal HTML link dan berbagai
+            jenis list yang digunakan untuk
+            menampilkan informasi pada halaman web.
+          </p>
+
+          <a
+            href="/2025/03/20/html-link-dan-list.html"
+            class="read-more">
+
+            Baca Selengkapnya →
+
+          </a>
+
+        </div>
+
+      </article>
+
+
+      <!-- MARKDOWN -->
+
+      <article class="post-card">
+
+        <div class="post-image-wrapper">
+
+          <img
+            src="/assets/images/markdown.jpg"
+            alt="Markdown"
+            class="post-image">
+
+        </div>
+
+        <div class="post-content">
+
+          <span class="post-category">
+            Markdown
+          </span>
+
+          <h2 class="post-title">
+
+            <a href="/2025/03/14/markdown.html">
+              Markdown
+            </a>
+
+          </h2>
+
+          <span class="post-date">
+            📅 14 Maret 2025
+          </span>
+
+          <p class="post-excerpt">
+            Mengenal Markdown sebagai bahasa
+            markup ringan untuk menulis dokumen
+            dengan format yang sederhana.
+          </p>
+
+          <a
+            href="/2025/03/14/markdown.html"
+            class="read-more">
+
+            Baca Selengkapnya →
+
+          </a>
+
+        </div>
+
+      </article>
+
+
+      <!-- RUBY & JEKYLL -->
+
+      <article class="post-card">
+
+        <div class="post-image-wrapper">
+
+          <img
+            src="/assets/images/jekyll.jpg"
+            alt="Ruby dan Jekyll"
+            class="post-image">
+
+        </div>
+
+        <div class="post-content">
+
+          <span class="post-category">
+            Jekyll
+          </span>
+
+          <h2 class="post-title">
+
+            <a href="/2025/03/14/ruby-dan-jekyll.html">
+              Ruby dan Jekyll
+            </a>
+
+          </h2>
+
+          <span class="post-date">
+            📅 14 Maret 2025
+          </span>
+
+          <p class="post-excerpt">
+            Penjelasan mengenai Ruby dan Jekyll,
+            termasuk hubungan Ruby dengan Jekyll
+            sebagai static site generator.
+          </p>
+
+          <a
+            href="/2025/03/14/ruby-dan-jekyll.html"
+            class="read-more">
+
+            Baca Selengkapnya →
+
+          </a>
+
+        </div>
+
+      </article>
 
     </main>
 
+
+    <!-- FOOTER -->
+
     <footer>
-     <p>&copy; 2025 Muliadi Tumangger. All rights reserved.</p> 
+
+      <div class="footer-line"></div>
+
+      <p>
+        &copy; 2026
+        <strong>Muliadi Tumangger</strong>
+      </p>
+
+      <small>
+        Personal Website • Built with HTML, CSS &amp; Jekyll
+      </small>
+
     </footer>
+
   </div>
+
 </body>
+
 </html>
