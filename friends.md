@@ -51,6 +51,7 @@ title: Friend
   <h1>Friend Page</h1>
   <p>Berikut Teman-teman saya di kelas:</p>
   <ul>
+    <li><a herf="https://mdhiyaulatha.me/">Muhammad Dhiyaul Atha</a></li>
     <li><a href="https://abadan1912.github.io/">Abadan Syakira</a></li>
     <li><a href="https://akbar2224.github.io/akbar2224/">TM Dzaky Maulana</a></li>
     <li><a href="https://alfisyahrin-26.github.io/">Muhammad Alfi Syahrin</a></li>
